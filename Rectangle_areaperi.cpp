@@ -1,4 +1,4 @@
-//program to calculate area and perimeter of a rectangle
+// Write a c program to calculate area and perimeter of a rectangle
 
 #include <stdio.h>
 int main()
