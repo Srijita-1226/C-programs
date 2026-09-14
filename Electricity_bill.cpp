@@ -1,10 +1,9 @@
-/* Write a c program to calculate the electricity bill according to the following criteria :
-			UNITS    						   	RATE
-		1st 200 units							Free
-		Next 100 units 						0.75 / unit
-		Next 100 units						1.00 / unit
-		Above 400 units						1.25 / unit       */
-		
+/* Write a c program to calculate the electricity bill based on the number of units consumed. The charges
+are:   0-100 -> Rs.2/unit
+	   101-200 -> Rs.3/unit
+	   201-300 -> Rs.5/unit
+	   above 300 -> Rs.7/unit    */
+
 #include <stdio.h>
 main ()
 {
@@ -12,21 +11,21 @@ main ()
 	printf ("Enter your consumed units = ");
 	scanf ("%f", &unit);
 	
-	if (unit <= 200)
+	if (unit <= 100)
 	{
-		bill = 0;
+		bill = (2*100);
+	}
+	else if (unit > 100 && unit <= 200)
+	{
+		bill = (2*100) + (unit-100)*3;
 	}
 	else if (unit > 200 && unit <= 300)
 	{
-		bill = (unit-200)*0.75;
-	}
-	else if (unit > 300 && unit <= 400)
-	{
-		bill = (100 * 0.75) + (unit - 300) * 1.00;
+		bill = (100*2) + (100*3) + (unit-200)*5;
     }
     else
     {
-        bill = (100 * 0.75) + (100 * 1.00) + (unit - 400) * 1.25;
+        bill = (100*2) + (100*3) + (100*5) + (unit - 300)*7;
 	}
 		
 	printf ("Your electricity bill is Rs. %.2f for this month.", bill);
