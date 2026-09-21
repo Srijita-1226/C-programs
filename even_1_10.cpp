@@ -8,10 +8,8 @@ int main ()
 	
 	while (i<= 10)
 	{
-		// checking for even number
-		if (i % 2 == 0)
-			printf ("%d \n ",i);
-		i++;
+		printf ("%d \n ",i);
+		i = i+2;
 	}
 	return 0;
 }
