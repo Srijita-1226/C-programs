@@ -25,6 +25,6 @@ int main ()
 		c++;
 		a = a+2;
 	}
-	
+	printf ("Sum of the series = %d", sum);
 	return 0;
 }              
