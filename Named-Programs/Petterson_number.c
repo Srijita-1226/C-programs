@@ -2,7 +2,7 @@
 logic for perterson number :-   A number is a Peterson number if the sum of the factorials of its digits equals the number.
                                 Example :   145 = 1! + 4! + 5! = 145   */
 
-// Also known as *KRISHNAMURTHY NUMBER* OR *KARPEKAR NUMBER*.
+// Also known as *KRISHNAMURTHY NUMBER* OR *STRONG NUMBER*.
 
 #include <stdio.h>
 int main()
