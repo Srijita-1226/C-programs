@@ -8,7 +8,7 @@
 
 int main()
 {
-    int n, i, j;
+    int n, i, j, k;
 
     printf ("Enter the number of lines :");
     scanf ("%d", &n);
@@ -19,7 +19,7 @@ int main()
     for (i=1; i<=n; i++)     //Denotes row
     {    
         //This loop prints spaces before the stars.
-        for (j=1; j <= n-i; j++)  //Denotes coloumn
+        for (k=1; k<= n-i; k++)  //Denotes coloumn
         {
             printf("  ");   // Print leading spaces
         }
