@@ -1,7 +1,9 @@
-/* Write a c program to print the followintg pattern :-       *
+/* Write a c program to print the followintg pattern :-  Centered Angled Triangle
+
+                                                              *
                                                             * * *
                                                           * * * * *
-                                                          upto n lines   */
+                                                        * * * * * * *  ........upto n lines   */
 
 #include <stdio.h>
 
